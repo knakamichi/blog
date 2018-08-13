@@ -1,0 +1,4 @@
+form a {
+  margin-left: 5px;
+}
+/* JSX appear as html in browser => css指定は html tag に沿う。  */
