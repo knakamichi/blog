@@ -34,7 +34,9 @@ class PostsNew extends Component {
 // this function is where we manually decide what to do with the values inside form (send to server, push to another component, etc)
   onSubmit(values){
     // this(binded in onSubmit) === component
-    this.props.createPost(values);
+    this.props.createPost(values, () => {
+      this.props.history.push('/');
+    });
   }
 
   render() {
